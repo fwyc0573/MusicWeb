@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+}
+
+/*最外层盒子*/
+.songRanking_content{
+	width: 1000px;
+	height: auto;
+	border-left: 1px solid #696969;
+	border-right: 1px solid #696969;
+	margin: 0 auto;
+}
+/*左边导航栏，显示“播放排行榜”、“下载排行榜”、“收藏排行榜”*/
+.songRanking_left_type{
+	width: 250px;
+	height: auto;
+	float: left;
+	
+}
+/*左侧显示分类类型，ul*/
+#songRanking_type_ul{
+	padding: 0;
+	margin: 0;
+}
+#songRanking_type_ul li{
+	list-style: none;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 1px solid #696969;
+	transition: all 0.3s;
+}
+#songRanking_type_ul li:hover{
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	background: #E8E8E8;
+}
+.songRanking_type_ul_selectes{
+	font-size: 16px!important;
+	font-weight: 700;
+	background: #E8E8E8;
+}
+/*右侧，显示每种导航下的歌曲信息*/
+.songRanking_rihgt_songList{
+	width: 700px;
+	height: auto;
+	float: left;
+	border-left: 1px solid #696969;
+	padding-bottom: 90px;
+}
+#songRanking_table{
+	margin-left: 40px;
+	width: 100%;
+
+}
+#songRanking_table tr{
+	height: 30px;
+    padding: 30px;
+}
+#songRanking_table tr:hover{
+	background: #E2E2E2!important;
+}
+#songRanking_table tr td:nth-child(1){
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+/*播放按钮样式*/
+.playSongBtn{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: #999;
+	border-radius: 8px;
+	float: right;
+	margin-right: 15px;
+	transition: all 0.3s;
+}
+.playSongBtn:hover{
+	cursor: pointer;
+	background: #1E90FF;
+}
+
+/*添加到歌单按钮样式*/
+.addSongList_img_div{
+	display: none;
+	width: 20px;
+	height: 20px;
+	background: url(../images/addSongToSongList.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.addSongList_img_div:hover{
+	cursor: pointer;
+}
+
+/*用户点击添加到歌单，显示界面样式*/
+.addSongList_showDiv{
+	z-index: 1000;
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -200px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #666;
+	overflow-y: none;
+	overflow-x: auto;
+}
+.addSongList_showDiv::-webkit-scrollbar{
+	display:block;
+	width:0px;
+}
+.addSongList_showDiv_header{
+	position: absolute;
+	top: 0;
+	width: 400px;
+	height: 40px;
+	background: #2D2D2D;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 40px;
+}
+.addSongList_songList{
+	position: absolute;
+	top: 40px;
+}
+/*每个歌单p样式*/
+.addSongList_p{
+	height: 50px;
+	margin: 0;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 50px;
+}
+/*点击X号，让添加歌曲到歌单界面消失的样式*/
+#none_addSongList_showDiv{
+	display: inline-block;
+	transform: rotate(45deg);
+	font-size: 22px;
+	float: right;
+	margin-right: 20px;
+}
+#none_addSongList_showDiv:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>注册</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Registerr.css">
+  </head>
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/Register.js"></script>
+  <body>
+		<div class="divShang">
+			<img src="" class="email_png" width="35" />
+		</div>
+		<div class="divXia">
+			<form id="form1" name="form1" action="/TestServlet/UserControlServlet?action=register" method="post">
+				<table border="0" align="center" cellpadding="0" cellspacing="0">
+					<caption>用户注册</caption>
+					<tr>
+						<td>
+							<input type="text" placeholder="用户账号" name="loginid" id="loginid" required="required" pattern="[a-zA-Z][a-zA-Z0-9_]{5,14}" />
+							<p id="loginId_text"><span>*</span>&nbsp;&nbsp;6-14个字符，包括字母、数字、下划线,字母开头</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="password" placeholder="密码" name="psd1" id="psd1" required="required" pattern="[a-zA-Z0-9_!@#$%^&*]{6,14}" />
+							<p><span>*</span>&nbsp;&nbsp;6~14个字符，区分大小写</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="password" placeholder="确认密码" name="psd2" id="psd2" />
+							<p id="psd_text"><span>*</span>&nbsp;&nbsp;与密码保持一致</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input name="phoneno" placeholder="手机号码" id="phoneno" pattern="1[3|5|7|8][0-9]{9}" />
+							<p id="phone_text"><span>*</span>&nbsp;&nbsp;支持手机号登录</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" name="username" placeholder="昵称" id="username" required="required">
+							<p><span>*</span>&nbsp;&nbsp;用户昵称</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="radio" name="usersex" id="usersexman" value="男" checked="checked">
+							<label for="usersexman">男</label>
+							<input type="radio" name="usersex" style="margin-left:25px;" id="usersexwoman" value="女">
+							<label for="usersexwoman">女</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" name="email" placeholder="用户邮箱" id="email">
+							<p id="email_text">用户邮箱</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" name="sign" placeholder="个人签名" id="sign">
+							<p>个人签名</p>
+						</td>
+					</tr>
+					
+					<tr>
+						<td><input type="submit" id="register_button" value="立即注册" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

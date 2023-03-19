@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	    <meta http-equiv="description" content="this is my page">
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/CDinfoSingle.css">
+	</head>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.wresize.js"></script>
+	<script type="text/javascript" src="js/indexIframeSongList.js"></script>
+
+	<body>
+		<!--用户把点击加入歌单显示页面-->
+		<div class="addSongList_showDiv">
+			<div class="addSongList_showDiv_header">添加到歌单<span title="关闭" id="none_addSongList_showDiv">+</span></div>
+			<div class="addSongList_songList" songId>
+				<!--用于显示用户创建的歌单-->
+			</div>
+		</div>
+		<!-- 我的音乐，iframe加载页面 -->
+		<div class="mymusic_content">
+			<div class="mymusic_content_left">
+				
+			</div>
+			<div class="mymusic_content_right">
+				<div id="showOrNot">
+					<div class="music_right_header">
+						<img alt="图片" src="" id="songList_photo" height="170" width="170">
+						<div class="music_right_header_songlist_info">
+							<p>
+								<span>专辑:</span>
+								<span id="songList_Name"></span>
+							</p>
+							<p>
+								<span>歌手:</span>
+								<span id="songList_singer"></span>
+							</p>
+							<p>
+								<span>发行时间:</span>
+								<span id="songList_Time"></span>
+							</p>
+	                        <p>
+								<span>专辑介绍:</span>
+								<span id="songList_intro"></span>
+							</p>
+						</div>
+					</div>
+					<h2 class="songList_song_title">歌曲列表</h2>
+					<div class="songList_song">
+						<table id="song_list_table" cellspacing="0" cellpadding="13" border="0" >
+							<tr class="table_title">
+								<td></td>
+								<td>歌曲标题</td>
+								<td>时长</td>
+								<td>歌手</td>
+							</tr>
+						</table>
+					</div>
+					<h2 class="songList_comment_title">评论</h2>
+					<div class="write_songlist_comment">
+						<img align="top" alt="用户头像" id="user_header_photo" src="./images/headd.png" width="50" height="50" />
+						<textarea id="songlist_comment_textarea" placeholder="评论" rows="4" cols="85"></textarea>
+						<button id="comment_submit">评论</button>
+					</div>
+					<ul id="comment_ul">
+						<!--<li class="comment_ul_li">
+							<div class="commUserHeaderImg_div">
+								<img class="commUserHeaderImg" src="images/LOGO.png" width="100%" />
+							</div>
+							<div class="commContent_div">
+								<span id="commUserName">用户名：</span>
+								<span id="commContent">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</span>
+								<p class="commDate">时间：</p>
+							</div>
+						</li>
+						<div class="clear"></div>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

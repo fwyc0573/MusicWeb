@@ -1,0 +1,21 @@
+
+/*table样式*/
+.user_manage_content_table2{
+	width: 1200px;
+	margin: 0 auto;
+}
+.user_manage_content_table2 tr{
+	border-bottom: 1px solid #666666;
+	transition: all 0.3s;
+}
+/*用户编号td*/
+.user_manage_content_table2 tr td:nth-child(1){
+	width: 50px;
+	font-size: 14px;
+	text-align: center;
+}
+
+/*操作td*/
+.user_manage_content_table2 tr td:nth-child(8){
+	width: 150px;
+}

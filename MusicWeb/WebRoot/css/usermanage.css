@@ -1,0 +1,39 @@
+
+.updateUserStateId{
+	width: 40px;
+	height: 20px;
+	color: white;
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+
+.updateUserStateBgColor_1{
+	background: red;
+}
+
+.updateUserStateBgColor_0{
+	background: #1296DB;
+}
+
+.user_manage_content_table{
+	width: 1200px;
+	margin: 0 auto;
+}
+.user_manage_content_table tr{
+	border-bottom: 1px solid #666666;
+	transition: all 0.3s;
+}
+
+.user_manage_content_table tr td:nth-child(1){
+	width: 50px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.user_manage_content_table tr td:nth-child(8){
+	width: 150px;
+}

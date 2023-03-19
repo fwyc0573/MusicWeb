@@ -1,0 +1,308 @@
+@CHARSET "UTF-8";
+body{
+	margin:0;
+	padding:0;
+	position: relative;
+}
+.mymusic_content{
+	width:1002px;
+	height:auto;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+	background:#fff;
+	margin:0 auto;
+}
+
+.mycollection_songList_title,
+.mycreate_songList_title{
+	width:100%;
+	height:40px;
+	background:#E6E6E6;
+	text-align:left;
+	line-height:40px;
+	position:relative;
+	border-bottom:1px solid #666;
+}
+.mycollection_songList_title:hover,
+.mycreate_songList_title:hover{
+	cursor:pointer;
+}
+.mycreate_songList_title{
+	margin-top:80px;
+}
+.mycollection_songList_title:before,
+.mycreate_songList_title:before{
+	content:"";
+	width:0;
+	height:0;
+	position:absolute;
+	border:8px solid;
+	border-color:#666 #E6E6E6 #E6E6E6 #E6E6E6;
+	left:5px;
+	top:50%;
+	margin-top:-4px;
+}
+.mycollection_songList_title span,
+.mycreate_songList_title span{
+	margin-left:26px;
+}
+.songListdiv_none{
+	display:none;
+}
+.mySongList{
+	width:100%;
+	height:auto;
+}
+.mySongList_div{
+	display:block;
+	width:100%;
+	height:60px;
+	background:#F9F9F9;
+	overflow:hidden;
+	transition:all 0.3s;
+}
+.mySongList_div:hover{
+	
+}
+.mySongList_div>img{
+	display:inline-block;
+	height:40px;
+	margin-top:10px;
+	float:left;
+	margin-left:20px;
+}
+.mySongList_div > span{
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	height:60px;
+	overflow:hidden;
+}
+.mySongList_div > span>p{
+	margin:0;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+}
+.mySongList_div > span>p:nth-child(1){
+	font-size:13px;
+}
+.mySongList_div > span>p:nth-child(2){
+	font-size:12px;
+	color:#999;
+}
+.mySongList_div:hover{
+	background:#E6E6E6;
+	cursor:pointer;
+}
+.mymusic_content_right{
+	width:750px;
+	height:100%;
+	float:left;
+	overflow:auto;
+	
+}
+.mymusic_content_right::-webkit-scrollbar{
+	display:block;
+	width:0px;
+}
+.music_right_header{
+	height:250px;
+	width:750px;
+	overflow:hidden;
+}
+.music_right_header>img{
+	display:block;
+	background:red;
+	float:left;
+	margin-top:25px;
+	margin-left:30px;
+}
+.music_right_header_songlist_info{
+	width:495px;
+	height:200px;
+	margin-top:25px;
+	margin-left:25px;
+	float:left;
+}
+/*用户头像*/
+#user_header_photo{
+	display:inline-block;
+	overflow:hidden;
+	border-radius:18px;
+	background:#fff;
+}
+/*-歌曲列表与评论标题字样式--*/
+.songList_song_title,
+.songList_comment_title{
+	padding-left:30px;
+	border-bottom:2px solid #C20C0C;
+	padding-bottom:15px;
+	margin-bottom:0;
+}
+.songList_song table{
+	width:100%;
+	border-bottom:15px solid #999;
+}
+.table_title{
+	background:#E5E5E5;
+}
+.songList_song table tr{
+	height:25px;
+	border-top:1px solid #999;
+}
+.songList_song table tr td:nth-child(1){
+	width:60px;
+}
+/*评论*/
+.write_songlist_comment{
+	height:120px;
+	width:700px;
+	margin:0 auto;
+	margin-top:20px;
+	border-bottom: 1px solid #666666;
+}
+#songlist_comment_textarea{
+	display:inline-block;
+	resize:none;
+	width:600px;
+}
+#comment_submit{
+	width:50px;
+	height:25px;
+	display:block;
+	background:#297BC7;
+	color:#fff;
+	border:0;
+	float:rignt;
+}
+.bar_input{
+	display:none;
+}
+/*歌曲从歌单中删除，添加音乐到歌单，共同样式*/
+.addSongList{
+	display:none;
+	width:20px;
+	height:20px;
+	border-radius: 3px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/*歌曲名后面的+号样式，添加到歌单*/
+.addSongList{
+	margin-left:25px;
+	background: url(../images/addSongToSongList.png);
+}
+.addSongList:hover{
+	cursor: pointer;
+}
+/*播放按钮样式*/
+.playSongBtn{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/play.png);
+	border-radius: 8px;
+	float: right;
+	margin-right: 15px;
+    background-size: 100%;
+}
+.playSongBtn:hover{
+	cursor: pointer;
+	background: #B22222;
+}
+/*用户点击添加到歌单，显示界面样式*/
+.addSongList_showDiv{
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -200px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #666;
+	overflow-y: none;
+	overflow-x: auto;
+}
+.addSongList_showDiv::-webkit-scrollbar{
+	display:block;
+	width:0px;
+}
+.addSongList_showDiv_header{
+	position: absolute;
+	top: 0;
+	width: 400px;
+	height: 40px;
+	background: #2D2D2D;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 40px;
+}
+.addSongList_songList{
+	position: absolute;
+	top: 40px;
+}
+/*每个歌单p样式*/
+.addSongList_p{
+	height: 50px;
+	margin: 0;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 50px;
+}
+/*点击X号，让添加歌曲到歌单界面消失的样式*/
+#none_addSongList_showDiv{
+	display: inline-block;
+	transform: rotate(45deg);
+	font-size: 22px;
+	float: right;
+	margin-right: 20px;
+}
+#none_addSongList_showDiv:hover{
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+/*评论信息*/
+#comment_ul{
+	width: 700px;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.comment_ul_li{
+	display: block;
+	list-style-type: none;
+	margin-top: 20px;
+	height: auto;
+	border-bottom: 1px solid #666;
+	padding-bottom: 10px;
+}
+#comment_ul li:last-child{
+	margin-bottom: 20px;
+}
+/*评论人头像盒子*/
+.commUserHeaderImg_div{
+	width:50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+	border-radius:20px;
+	background:#fff;
+}
+.commContent_div{
+	float: left;
+	font-size: 14px;
+}
+.commDate{
+	margin: 0;
+	margin-top: 20px;
+	color: #666666;
+	font-size: 12px;
+}

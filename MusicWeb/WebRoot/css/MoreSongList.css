@@ -1,0 +1,238 @@
+body{
+	margin: 0;
+}
+.more_songList_center{
+	width:1002px;
+	height:auto;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+	background:#fff;
+	margin:0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.more_songList_center_header{
+	width: 950px;
+	height: 60px;
+	border-bottom: 3px solid #C20C0C;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.songList_tags{
+	display: block;
+	font-size: 28px;
+	font-weight: 500;
+	float: left;
+}
+.select_songList_tags{
+	display: block;
+	width: 100px;
+	height: 30px;
+	float: left;
+	border: 1px solid #363636;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-align:center;
+	line-height: 30px;
+	margin-left: 10px;
+	background: #999999;
+	color: blue;
+	position: relative;
+}
+.select_songList_tags:hover{
+	background: rgba(99,99,99,0.5);
+	cursor: pointer;
+}
+#all_tags_choose{
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+.choose_tags{
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 350px;
+	background: white;
+	top: 40px;
+	left: -70px;
+	box-shadow: 0 0 10px #666;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.all_tags_header{
+	width: 500px;
+	padding-top: 4px;
+	height: 34px;
+	border-bottom: 1px solid #363636;
+}
+.tags_list_div{
+	width: 500px;
+	height: 310px;
+}
+#tags_table{
+	height: 100%;
+	width: 100%;
+}
+#tags_table tr{
+	
+}
+#tags_table tr td{
+	align-content: center;
+	
+}
+#tags_table tr td:nth-child(1){
+	border-right: 1px solid #666;
+	width: 100px;
+}
+#tags_table tr td:nth-child(2){
+	padding-left: 15px;
+	text-align: left;
+}
+#tags_table tr td:nth-child(2) a,
+#tags_table tr td:nth-child(2) span{
+	display: inline-block;
+}
+#tags_table tr td:nth-child(2) a{
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px;
+	color: #666666;
+	margin-left: 8px;
+	margin-right: 8px;
+	
+}
+#tags_table tr td:nth-child(2) a:hover{
+	color: #000000;
+	text-decoration: underline;
+}
+#tags_table tr td:nth-child(2) span{
+	color: #999999;
+}
+.all_tags_button{
+	display: block;
+	width: 70px;
+	height: 30px;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	line-height: 30px;
+	margin-left: 30px;
+}
+.all_tags_button:hover{
+	cursor: pointer;
+}
+.show_songListToTags{
+	width: 950px;
+	height: auto;
+	margin: 0 auto;
+}
+.songList_ul{
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.one_songList{
+	display: block;
+	float: left;
+	width: 150px;
+	height: 200px;
+	margin-left: 33px;
+	margin-top: 20px;
+}
+#songList_img_div{
+	width: 150px;
+	height: 150px;
+}
+#songList_img{
+	display: block;
+}
+#songList_img:hover{
+	cursor: pointer;
+}
+#songList_name{
+	display: block;
+	margin: 0;
+	margin-top: 10px;
+	height: 40px;
+	width: 150px;
+	font-size: 14px;
+	overflow: hidden;
+}
+#songList_name:hover{
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+.pageNum_div{
+	width: auto;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+/*上一页，下一页*/
+.prevPage_span,
+.nextPage_span{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.prevPage_span:hover,
+.nextPage_span:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+/*当前页码是第一页或者最后一页*/
+.currentPageIsOneOrLast{
+	color:silver;
+	border: 1px solid silver;
+}
+.currentPageIsOneOrLast:hover{
+	color: silver!important;
+	border: 1px solid silver!important;
+	cursor: default!important;
+}
+
+.pageNum_span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.pageNumIsCurrentPage{
+	background: #D81E06;
+	color: white;
+}
+.pageNumIsCurrentPage:hover{
+	cursor: default!important;
+}
+.pageNum_span:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.footer{
+	width: 100%;
+	height: 200px;
+	background: red;
+}

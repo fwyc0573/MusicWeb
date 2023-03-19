@@ -1,0 +1,160 @@
+.usermanage_content,
+.downloadmanage_content,
+.commentmanage_content,
+.songmanage_content{
+	width: 1300px;
+	background: white;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #666666;
+	margin-top: 20px;
+	position:relative;
+}
+
+.deleteUserBtn{
+	width: 40px;
+	height: 20px;
+	background: #1296DB;
+	color: white;
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+}
+.table_tr_mouseover{
+	background: #DDDDDD!important;
+	cursor: pointer;
+}
+
+.pageNum_div{
+	width: auto;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+
+.prevPage_span,
+.nextPage_span{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.prevPage_span:hover,
+.nextPage_span:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.currentPageIsOneOrLast{
+	color:silver;
+	border: 1px solid silver;
+}
+.currentPageIsOneOrLast:hover{
+	color: silver!important;
+	border: 1px solid silver!important;
+	cursor: default!important;
+}
+
+.pageNum_span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.pageNumIsCurrentPage{
+	background: #D81E06;
+	color: white;
+}
+.pageNumIsCurrentPage:hover{
+	cursor: default!important;
+}
+.pageNum_span:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.pageNum_div2{
+	width: auto;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+
+.prevPage_span2,
+.nextPage_span2{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.prevPage_span2:hover,
+.nextPage_span2:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.currentPageIsOneOrLast2{
+	color:silver;
+	border: 1px solid silver;
+}
+.currentPageIsOneOrLast2:hover{
+	color: silver!important;
+	border: 1px solid silver!important;
+	cursor: default!important;
+}
+
+.pageNum_span2{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+.pageNumIsCurrentPage2{
+	background: #D81E06;
+	color: white;
+}
+.pageNumIsCurrentPage2:hover{
+	cursor: default!important;
+}
+.pageNum_span2:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}

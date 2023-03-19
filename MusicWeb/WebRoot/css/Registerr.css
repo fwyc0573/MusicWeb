@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+
+.divXia td input{
+	height: 30px;
+	width: 300px;
+	margin-top: 5px;
+}
+.divXia td img{
+	margin-top: 15px;
+}
+.divXia td p{
+	margin-top: 5px;
+	color: #20A984;
+}
+.divXia td p span{
+	color:red;
+	text-decoration:none;
+	font-size:18px;
+}
+.divXia caption{
+	padding-left: 15px;
+	font-size: 20px;
+	text-align: left;
+}
+td:nth-child(1){
+	vertical-align: top;
+	text-align: center;
+	width: 150px;
+	height: auto;
+	font-size: 12px;
+}
+td:nth-child(2){
+	vertical-align: top;
+	width: 450px;
+	font-size: 10pt;
+}
+tr:nth-child(5) span{
+	margin-left: 10px;
+	text-decoration: underline;
+}
+tr:nth-child(5) span:hover{
+	cursor: pointer;
+}
+td p{
+	text-align: left;
+}
+td:nth-child(2) span{
+	text-decoration: underline;
+	color: #00f;
+	cursor: pointer;
+	
+}
+#psd1,
+#psd2,
+#phoneno,
+#loginid,
+#username,
+#email,
+#sign{
+	border: 1px solid #aaf;
+	border-radius: 3px;
+	padding-left: 15px;
+	transition: all ease-in-out 0.3s;
+	border: 1px solid silver;
+	width: 305px;
+}
+#psd1:focus,
+#psd2:focus,
+#phoneno:focus,
+#loginid:focus,
+#username:focus,
+#email:focus,
+#sign:focus{
+	outline: none;
+	border: 1px solid #20A984;
+	border-radius: 5px;
+	background: rgba(32,169,132,0.3);
+	box-shadow: 0 0 5px rgba(32,169,132,0.5);
+	color: white;
+}
+#register_button{
+	width: 322px;
+	height: 32px;
+	border: 0;
+	background: #20A984;
+	color: white;
+	border-radius: 5px;
+}
+/*性别按钮*/
+#usersexman,
+#usersexwoman{
+	width:15px;
+	height:15px;
+}
+#register_button:focus{
+	outline: none;
+}
+.inp::-webkit-input-placeholder{
+	color: gray;
+}
+.inp:-ms-input-placeholder{
+	color: gray;
+}
+.inp::-moz-placeholder{
+	color: gray;
+}
+.inp:-moz-placeholder{
+	color: gray;
+}

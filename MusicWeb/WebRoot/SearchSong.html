@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索加载</title>
+		<link href="css/SearchSong.css" rel="stylesheet" type="text/css" />
+	</head>
+	<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+	<script src="js/SearchSong.js" type="text/javascript"></script>
+	<body>
+		<!--用户把点击加入歌单显示页面-->
+		<div class="addSongList_showDiv">
+			<div class="addSongList_showDiv_header">添加到歌单<span title="关闭" id="none_addSongList_showDiv">+</span></div>
+			<div class="addSongList_songList" songId>
+				<!--用于显示用户创建的歌单-->
+			</div>
+		</div>
+		<div class="search_content_div">
+			<header class="search_content_header">
+				搜索“<span id="searchSongName"></span>”，找到&nbsp;<span id="songRowNum"></span>&nbsp;首<span id="searchTypeName"></span>
+			</header>
+			<div class="search_type">
+				<span id="search_song" class="search_type_span">
+					单曲
+				</span>
+				<span id="search_songList" class="search_type_span">
+					专辑
+				</span>
+			</div>
+			<div class="searchSongList_div">
+				<table id="searchSong_table" border="0" cellpadding="0" cellspacing="0">
+					
+				</table>
+			</div>
+			<div class="pageNum_div">
+					
+			</div>
+		</div>
+	</body>
+</html>
