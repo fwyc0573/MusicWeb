@@ -90,7 +90,7 @@ The search paging function is implemented through the following process:
  
 <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig5.png" height="280" /> <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig6.png" height="280" /> 
  
- <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig8.png" height="200" />  <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig10.png" height="200" />
+ <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig8.png" height="160" />  <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig10.png" height="160" />
  
  <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig13.png" height="180" /> <img src="https://github.com/fwyc0573/MyMusicWeb/blob/main/fig/fig14.png" height="180" /> 
  
