@@ -1,5 +1,5 @@
 # Music website
-My zero-copy undergraduate work, a music website for my favourite singer, Vae, implemented by Java.
+My undergraduate work, a original music website for my favourite singer, Vae, implemented by Java.
 
 Demonstration demos: 
 
