@@ -1,7 +1,7 @@
 # Music website
 
 ## Introduction
-My undergraduate work (grade A awarded), an original music website for my favourite singer, Vae, implemented by Java.
+My zero-copy undergraduate work (grade A awarded), an original music website for my favourite singer, Vae, implemented by Java.
 
 ## Video demonstration
 
